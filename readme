@@ -1,0 +1,41 @@
+
+This file contains my documentation on Pete's code.
+
+File structure
+
+  leemis
+    public_html
+      chart
+        UDR (this is the gateway to the page via chmod)
+          about.html
+          BaseImage.png
+          buttons            directory
+          chartimages        directory
+          contact.html       contact information in html
+          docs               documentation file
+          infoimages         directory containing images of f(x) for display on mouse over
+          links.html         links to related work in html
+          logo.gif           image in the upper-left corner
+          PDFs               directory containing the PDF files 
+          readme             this file
+          supportfiles       directory
+          UDR.css
+          UDR.html           the chart in html (page content)
+
+Address to view chart
+
+  http://www.math.wm.edu/~leemis/chart/UDR/UDR.html
+
+Pete's e-mail
+
+  peter.e.vermeer@uscg.mil
+  peter.e.vermeer@gmail.com
+
+John Urban segment of code in UDR.html is in javascript and is used to zoom in and out (open source)
+
+UDR.html uses CSS (Cascading Style Sheets); the content is all html files
+
+Geometric images --- the (0, 0) position is the upper-left-hand corner of the page
+  circle     for letters on the chart have (x, y) as center and a default radius 10
+  rectangle  for distributions on the chart;  use (x1, y1, x2, y2) to define top left and bottom right corners
+  polygon    for arrows on the chart; use (x1, y1, x2, y2, x3, y3, ...) to define corners

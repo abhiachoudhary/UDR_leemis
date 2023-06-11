@@ -1,0 +1,161 @@
+/*global rules - 
+background color 
+links 
+font-family
+font-color*/
+
+body{
+	background-color:rgb(255,255,255);
+	font-family: "Rockwell";
+	color:rgb(20,20,20);
+	}
+
+a:link {color:rgb(20,20,20); text-decoration:none;}
+a:visited {color:rgb(20,20,20); text-decoration:none;}
+a:active {color:rgb(20,20,20); text-decoration:none;}
+#logo{
+	position:absolute;
+	left:0%;
+	top:0%;
+	width:10%;
+	height:10%;
+	overflow:hidden;
+}
+#header{
+	position:absolute;
+	left:12%;
+	top:0;
+	width:90%
+	height:10%;
+	overflow:hidden;
+	background-color:transparent;
+}
+#chartbutton{
+	position:absolute;
+	left:0px;
+	top:10%;
+	width:150px;
+	height:4%;
+	overflow:hidden;
+}
+#aboutbutton{
+	position:absolute;
+	left:150px;
+	top:10%;
+	width:150px;
+	height:4%;
+	overflow:hidden;
+}
+#linksbutton{
+	position:absolute;
+	left:300px;
+	top:10%;
+	width:150px;
+	height:4%;
+	overflow:hidden;
+}
+#contactbutton{
+	position:absolute;
+	left:450px;
+	top:10%;
+	width:150px;
+	height:4%;
+	overflow:hidden;
+}
+#textbox{
+	position:absolute;
+	left:0px;
+	top:15%;
+	width:95%;
+	height:100%;
+	overflow:visible;
+	margin-left:5%;
+}
+#info{
+	position:absolute;
+	left:0px;
+	top:14%;
+	width:25%;
+	height:0%;
+	overflow:hidden;
+	border-style:solid;
+}
+#distributions{
+	position:absolute;
+	left:0px;
+	top:14%;
+	width:26%;
+	height:83%;
+	overflow:auto;
+}
+#Zoomin{
+	position:absolute;
+	left:31%;
+	top:19%;
+	width:20px;
+	height:20px;
+	overflow:hidden;
+	z-index:10
+}
+#Zoomout{
+	position:absolute;
+	left:31%;
+	top:24%;
+	width:20px;
+	height:20px;
+	overflow:hidden;
+	z-index:10
+}
+#Charthouse{
+	position:absolute;
+	left:26%;
+	top:14%;
+	width:74%;
+	height:83%; 
+	overflow:hidden;
+}
+#Chart{
+	position:relative;
+	left:0px;
+	top:0px;
+}
+#Upper{
+	position:absolute;
+	left:26%;
+	top:14%;
+	width:74%;
+	height:4%;
+	overflow:hidden;
+	z-index:11;
+	background-color:rgb(0,0,255);
+}
+#Downer{
+	position:absolute;
+	left:26%;
+	top:96%;
+	width:74%;
+	height:4%;
+	overflow:hidden;
+	z-index:11;
+	background-color:rgb(0,255,0);
+}
+#Lefter{
+	position:absolute;
+	left:26%;
+	top:14%;
+	width:3%;
+	height:83%;
+	overflow:hidden;
+	z-index:12;
+	background-color:rgb(255,0,0);
+}
+#Righter{
+	position:absolute;
+	left:97%;
+	top:14%;
+	width:3%;
+	height:83%;
+	overflow:hidden;
+	z-index:10;
+	background-color:rgb(0,255,255);
+}

@@ -1,0 +1,89 @@
+Documentation
+
+All documents reside in the main directory "UDR". The subdirectories contain
+content: images and portable document format (.pdf) articles. The naming
+convention for all images and other files was kept as close as possible to 
+Dr. Leemis' naming conventions for .tex files. The following is a 
+descriptive list of the pages and content directories of the site.
+
+-----Homepage-----
+
+UDR.html - The home page of the site, displaying a header, the chart, 
+a navigation pane for finding distributions, a menu to other pages, and an
+information dialogue that shows f(x) of the distributions. This document only
+includes the content. All formatting was accomplished with CSS. See _chart.css
+for formatting of all content elements.
+
+-----Linked Documents-----
+
+about.html - A discussion of the content of the chart, how to interpret the chart
+a link to the article "Univariate Distribution Relationships", contributors, 
+contact info, tested browsers, and a menu to other pages.
+
+BaseImage.png - the basic chart without any highlights
+
+contact.html - Dr. Leemis' email address and format for responses, questions,
+and suggestions.
+
+docs - the support file you are reading now.
+
+links.html - A list of links to be used as supplimentary material. Example:
+A link to APPLsoftware.com and a description of how APPL was used in the
+generation of content.
+
+logo.gif - An animation of two overlapping discrete PDF plots
+
+UDR.css - the repository for all styling choices (layout, background color, 
+links, etc) on the site. All pages should index to this file for styling. 
+
+-----Directories-----
+
+/buttons - contains all button images for menu buttons and zoom in/out buttons.
+
+/chartimages - contains all images of the chart with special highlighting for
+each distribution links to the chart info block (<div id="Charthouse">).
+
+/infoimages - contains png image files with screenshots of f(x) from the article.
+They have been changed to match the color scheme of the website. linked to the
+info block of the homepage (<div id="info">).
+
+/PDFs - Contains all portable document content .pdf files with distribution
+descriptions, transformation proofs, plots, etc.
+
+/supportfiles - see below
+
+-----Support Files-----
+
+BaseImagex.xcf - a GIMP image for any future edits to images. The program
+Seashore was used extensively to create all images on the site. Color choices
+can be interpreted with the eyedrop tool. The glowing color underneath layers
+is a bloom tool with radius 5 using the color "Lemon" rgb(255,255,0).
+
+areawriter.c - a .C file-handling program that takes input called "Coordinates"
+and outputs an html imagemap with areas having proper coordinates. Please note
+that no error checking was introduced into this program. Use caution when 
+changing area data on the UDF.html page.
+
+Coordinates - a text file that includes manually transcribed coordinate data of 
+three types - rect, circle, and polygon. Circles are described by one x,y pair.
+Circles were used to highlight individual properties of distributions. The circles
+all have radius 10 and are mapped over the center of the descriptive letter below
+a distribution. Rectangles or "rect" areas use two x,y pairs (ordered X1,Y1,X2,Y2)
+that describe the top left and the bottom right corners of all squares. Polygons
+need only have an even number of entries representing 3 or more pairs of 
+coordinates. These coordinates are listed after the name and area type. See
+the file for an example of how the data was transcribed. Once in this format,
+one only needs to run the areawriter.c program in the same directory. The
+resulting output file can then be pasted into the UDR.html file inbetween the
+<map> </map> tags. Of course individual coordinates may be adjusted directly
+by finding their position in the image map.
+
+distwriter.c - a .C file-handling program that takes input (Listofdist) and 
+generates out put that can be used in html to generate the
+links that appear in the side navigation panel of the UDF.html page.
+
+Listofdist - an alphabetical list of probability distributions split into dicrete
+and continuous lists. This data is used as imput in distwriter.c to ease the
+coding of hyperlinks in the distribution side navigation pane of the homepage.
+
+-----

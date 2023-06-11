@@ -1,0 +1,393 @@
+<html>
+
+<head>
+
+	<title>About</title>
+	<meta name="author" content="Larry Leemis"/>
+	<meta name="keywords" content="univariate, probability, distribution, connection, relationship, transformation"/>
+	<meta name="description" content="A clickable diagram of probability distributions and their relationships"/>
+	<link rel="stylesheet" type="text/css" href="UDR.css" />
+
+</head>
+
+<body>
+	<div id=logo>
+		<img id="_logo" src="logo.gif" border="0" width="100%" height="100%" alt=""/>
+	</div>
+	
+	<div id="header">
+		<h1>Univariate Distribution Relationships</h1>
+	</div>
+	
+	<div id="chartbutton">
+		<a href="UDR.html" onMouseOver="if(document.images) document.getElementById('_chartbutton').src= 'buttons/chart.gif';" onMouseOut="if(document.images) document.getElementById('_chartbutton').src= 'buttons/chart.png';" ><img id="_chartbutton" src="buttons/chart.png" width="100%" height="100%" border="0" alt=""/></a>
+	</div>
+	
+	 
+	<div id="aboutbutton">
+		<a href="about.html" onMouseOver="if(document.images) document.getElementById('_aboutbutton').src= 'buttons/about.gif';" onMouseOut="if(document.images) document.getElementById('_aboutbutton').src= 'buttons/about.png';"  ><img id="_aboutbutton" src="buttons/about.png" width="100%" height="100%" border="0"  alt=""/></a>
+	</div>
+	
+	<div id="linksbutton">
+		<a href="links.html" onMouseOver="if(document.images) document.getElementById('_linksbutton').src= 'buttons/links.gif';" onMouseOut="if(document.images) document.getElementById('_linksbutton').src= 'buttons/links.png';" ><img id="_linksbutton" src="buttons/links.png" width="100%" height="100%" border="0"  alt=""/></a>
+	</div>
+	
+	<div id="contactbutton">
+		<a href="contact.html" onMouseOver="if(document.images) document.getElementById('_contactbutton').src= 'buttons/contact.gif';" onMouseOut="if(document.images) document.getElementById('_contactbutton').src= 'buttons/contact.png';" ><img id="_contactbutton" src="buttons/contact.png" width="100%" height="100%" border="0"  alt=""/></a>
+	</div>
+	
+	<div id="textbox">
+		<h2>About the chart:</h2>
+
+		<p>The list on the left-hand side displays the names of the 76 probability distributions (19 discrete distributions given by the rectangular boxes and 57 continuous distributions given by the rectangular boxes with the rounded corners) present in the chart.  Hovering your mouse over the name of a distribution highlights the distribution on the chart, along with its related distributions.  Depending on the size of your browser window, you might have to adjust the display to find the distribution you are looking for. You may scroll the chart window or zoom in and out with the + and - buttons as needed.</p>
+		
+		<p>Each distribution on the chart, when clicked, links to a document showing detailed information about the distribution, including alternate functional forms of the distribution and the distribution's mean, variance, skewness, and kurtosis.</p>
+		
+		<h2>What is a univariate distribution?</h2>
+
+		<p>A univariate probability distribution is used to assign a probability to various outcomes of a random experiment.  A random experiment is one whose outcome can not be predicted with certainty prior to conducting the experiment.  When the set of all possible outcomes to a random experiment is countable or a countable infinity, the probability distribution can be described by a probability mass function and the associated random variable is discrete.  Otherwise, the probability distribution can be described by a probability density function and the associated random variable is continuous.  A mix of these two cases is known as a mixed discrete-continuous distribution.  Illustrations of a probability mass function in the case of rolling a pair of fair dice and summing the outcomes on the up faces and a probability density function in the case of the well-known normal distribution can be seen by clicking  <a href="http://en.wikipedia.org/wiki/Probability_distribution" style="color:blue;">here.</a>
+
+
+		<p>A univariate probability distribution is the probability distribution of a single random variable.  This is in contrast to a bivariate or multivariate probability distribution, which defines the probability distribution of two or more random variables.
+
+		<h2>What do the arrows mean?</h2>
+		
+		<p>Solid lines represent special cases and transformations from one distribution to another.</p>
+		
+		<p>Dashed arrows are used for asymptotic relationships, typically as the limit as one or more parameters approach the boundary of the parameter space.</p>
+		
+		<p>Dotted arrows represent Bayesian relationships.</p>
+		
+    <p>Upon interacting with the chart, outbound arrows are highlighted in yellow pointing away from the selected distribution. Incoming arrows and related distributions are highlighted in white. Placing the cursor over an arrow turns the arrow blue.  Clicking the arrow reveals a .pdf file that contains a proof when one exists.  The accompanying transformation or parameterization will be highlighted next to the arrow.</p>
+		
+		<h2>What do the letters just below the distribution names indicate?</h2>
+		
+		<ul>
+		
+		<li>C: The convolution property (C) indicates that sums of independent random variables having this particular distribution come from the same distribution family.</li>
+		
+		<li>F: The forgetfulness property (F), more commonly known as the memoryless property, indicates that the conditional distribution of a random variable is identical to the unconditional distribution. </li>
+		
+		<li>I: The inverse property (I) indicates that the reciprocal of a random variable of this type comes from the same distribution family.</li>
+		
+		<li>L: The linear combination property (L) indicates that the linear combinations of independent random variables having this particular distribution come from the same distribution family.</li>
+		
+		<li>M: The minimum property (M) indicates that the smallest of independent and identically distributed random variables from a distribution comes from the same distribution family.</li>
+		
+		<li>P: The product property (P) indicates that the product of independent random variables having this particular distribution comes from the same distribution family.</li>
+		
+		<li>R: The residual property (R) indicates that the conditional distribution of a random variable left-truncated at a value in its support belongs to the same distribution family as the unconditional distribution.</li>
+		
+		<li>S: The scaling property (S) implies that any positive real constant times a random variable having this distribution comes from the same distribution family.</li>
+		
+		<li>V: The variate generation property (V) indicates that the inverse cumulative distribution function of a continuous random variable can be expressed in closed form. For a discrete random variable, this property indicates that a variate  can be generated in an O(1) algorithm that does not cycle through the support values or rely on a special property.</li>
+		
+		<li>X: The maximum property (X) indicates that the largest of independent and identically distributed random variables from a distribution comes from the same distribution family.</li>
+		
+		</ul>
+
+    <p>Placing the cursor over a letter for a property turns the letter blue.  Clicking the property reveals a .pdf file that contains a proof when one exists. </p>
+		
+		<h2>What is the meaning of the parameters associated with the univariate probability distributions?</h2>
+
+    <p>Parameters are used to enhance the flexibility of a univariate probability distribution.  The normal distribution with its bell-shaped probability
+    density function, for example, might be an appropriate probability model the annual return for a stock index or the diameter of a ball bearing by adjusting
+    the values of its parameters.
+
+    <p>Generally speaking, there are three types of parameters associated with a continuous distribution.  A location parmeter shifts the probability density function to the left or to the right along the horizontal axis.  A scale parameter contracts or expands the scale associated with the horizontal axis of the probability density function.  A shape parameter changes the shape of the probability density function.  An example of a location parameter is the mean of a normal random variable; an example of a scale parameter is the standard deviation of a normal random variable; an example of a shape parameter is the degrees of freedom of a t random variable.
+
+		<h2>Are there errors on the chart?</h2>
+
+    <p>Yes.  The chart is basically identical to that which was published in The American Statistician.  In writing the proofs for some of the properties and
+    relationships, we have uncovered errors.  In addition, we were unable to complete some of the proofs.  They are listed by categories below.  </p>
+
+		<ul>
+
+    <li>Distributions that don't belong on the chart
+
+		  <ul>
+
+      <li> The Gamma-normal distribution is a bivariate distribution </li>
+
+		  </ul>
+
+    <li> Properties
+
+		  <ul>
+
+        <li>Incorrect properties: <br>
+        Standard Cauchy (S)<br>
+        Standard Wald (S)<br>
+        von Mises (S)<br>
+            </li>
+   
+            <li>Unproven properties:<br>
+            Cauchy (C)<br>
+            Cauchy (I)<br>
+            InverseGaussian (L)<br>
+            Lognormal (P)<br>
+            </li>
+
+            <li>Potential missing properties:<br>
+            Inverse Gaussian (S)<br>
+            Uniform (S)<br>
+            </li>
+
+		  </ul>
+
+    <li> Relationships 
+
+		  <ul>
+
+        <li>Incorrect relationships: 
+            </li>
+            Beta-binomial ---> Negative hypergeometric [should be a = n1, b = n3 - n1, n = n2 via Jean Peyhardi]<br>
+
+            <li>Unproven relationships:<br>
+            Doubly noncentral F ---> Noncentral F<br>
+            Generalized gamma ---> Lognormal<br>
+            Hypoexponential ---> Erlang <br>
+            Inverse Gaussian ---> Chi-square<br>
+            Inverse Gaussian ---> Standard normal<br>
+            Normal ---> Noncentral chi-square <br>
+	    Pascal ---> Normal [should be mu = n (1 - p) / p on the chart]<br> 
+	    Pascal ---> Poisson<br>
+            </li>
+
+        <li>Potential missing relationships: 
+            </li>
+
+        <li>Wrong parameter values:<br>
+            Standard Uniform --->  Logistic-Exponential
+            </li>
+
+		  </ul>
+
+    <li> Plots on the distribution page would be helpful:  Polya, Power series 
+
+		</ul>
+
+		<h2>Are there other univariate distributions not on the chart?</h2>
+
+		<p>Yes.  We were not able to squeeze all of them onto the chart.  Here is a partial list of distributions that are not among the 76 given on the chart:</p>
+
+		<ul>
+    <li> <a href="http://threeplusone.com/gud" style="color:blue;">Amoroso distribution</a>
+    <li> <a href="https://en.wikipedia.org/wiki/ARGUS_distribution" style="color:blue;">ARGUS distribution</a>
+    <li> <a href="https://en.wikipedia.org/wiki/Asymmetric_Laplace_distribution" style="color:blue;">Asymmetric Laplace distribution</a>
+    <li> <a href="https://en.wikipedia.org/wiki/Balding-Nichols_model" style="color:blue;">Balding-Nichols distribution</a>
+    <li> <a href="https://en.wikipedia.org/wiki/Bates_distribution" style="color:blue;">Bates distribution</a>
+    <li> <a href="https://en.wikipedia.org/wiki/Benini_distribution" style="color:blue;">Benini distribution</a>
+    <li> <a href="https://en.wikipedia.org/wiki/Benktander_type_I_distribution" style="color:blue;">Benktander Type I distribution</a>
+    <li> <a href="https://en.wikipedia.org/wiki/Benktander_type_II_distribution" style="color:blue;">Benktander Type II distribution</a>
+    <li> <a href="http://threeplusone.com/gud" style="color:blue;">Beta-exponential distribution</a>
+    <li> <a href="https://en.wikipedia.org/wiki/Beta_prime_distribution" style="color:blue;">Beta prime distribution</a>
+    <a href="betaprime.pdf" style="color:blue;">(proof by Hans Brunner and Stefano Bettelli of a limiting result)</a>
+    <li> <a href="https://en.wikipedia.org/wiki/Beta_rectangular_distribution" style="color:blue;">Beta-rectangular distribution</a>
+    <li> <a href="http://threeplusone.com/gud" style="color:blue;">Beta prime distribution</a>
+    <li> <a href="http://en.wikipedia.org/wiki/Birthday_problem" style="color:blue;">Birthday distribution</a>
+    <li> <a href="https://en.wikipedia.org/wiki/Borel_distribution" style="color:blue;">Borel distribution</a>
+    <li> <a href="http://en.wikipedia.org/wiki/Burr_distribution" style="color:blue;">Burr distribution</a>
+    <li> <a href="https://en.wikipedia.org/wiki/Cantor_distribution" style="color:blue;">Cantor distribution</a>
+    <li> <a href="https://en.wikipedia.org/wiki/Categorical_distribution" style="color:blue;">Categorical distribution</a>
+    <li> <a href="https://en.wikipedia.org/wiki/Circular_uniform_distribution" style="color:blue;">Circular uniform distribution</a>
+    <li> <a href="https://en.wikipedia.org/wiki/Compound_Poisson_distribution" style="color:blue;">Compound Poisson distribution</a>
+    <li> <a href="https://en.wikipedia.org/wiki/Conway-Maxwell-Poisson_distribution" style="color:blue;">Conway-Maxwell-Poisson distribution</a>
+    <li> <a href="http://en.wikipedia.org/wiki/Coupon_collector's_problem" style="color:blue;">Coupon collector distribution</a>
+    <li> <a href="http://en.wikipedia.org/wiki/Dagum_distribution" style="color:blue;">Dagum distribution</a>
+    <li> <a href="https://en.wikipedia.org/wiki/Davis_distribution" style="color:blue;">Davis distribution</a>
+    <li> <a href="https://www.hindawi.com/journals/tsm/1999/758131/" style="color:blue;">de la Vallee-Poussin distribution</a>
+    <li> <a href="https://en.wikipedia.org/wiki/Delaporte_distribution" style="color:blue;">Delaporte distribution</a>
+    <li> <a href="http://www.sciencedirect.com/science/article/pii/S0167715209004052" style="color:blue;">Dickman distribution</a>
+    <li> <a href="https://en.wikipedia.org/wiki/Dirac_delta_function" style="color:blue;">Dirac delta distribution</a>
+    <li> <a href="https://en.wikipedia.org/wiki/Discrete_phase-type_distribution" style="color:blue;">Discrete phase-type distribution</a>
+    <li> <a href="https://en.wikipedia.org/wiki/Elliptical_distribution" style="color:blue;">Elliptical distribution</a>
+    <li> <a href="https://en.wikipedia.org/wiki/Exponential_family" style="color:blue;">Exponential family</a>
+    <li> <a href="http://en.wikipedia.org/wiki/Exponentiated_Weibull_distribution" style="color:blue;">Exponentiated Weibull distribution</a>
+    Mudholkar, G.S., Srivastava, D.K., and Freimer, M. (1995), The Exponentiated Weibull Family:  A Reanalysis of the Bus-Motor-Failure Data, Technometrics, Vol. 37, No. 4, 436-445.
+    <li> <a href="http://en.wikipedia.org/wiki/Exponential-logarithmic_distribution" style="color:blue;">Exponential-logarithmic distribution</a>
+    <li> <a href="https://en.wikipedia.org/wiki/Extended_negative_binomial_distribution" style="color:blue;">Extended negative binomial distribution </a>
+    <li> <a href="https://en.wikipedia.org/wiki/Fiducial_inference" style="color:blue;">Fiducial distribution </a>
+    <li> <a href="https://en.wikipedia.org/wiki/Fisher%27s_z-distribution" style="color:blue;">Fisher's Z distribution </a>
+    <li> <a href="https://en.wikipedia.org/wiki/Flory–Schulz_distribution" style="color:blue;">Flory-Schulz distribution </a>
+    <li> <a href="http://en.wikipedia.org/wiki/Folded_normal_distribution" style="color:blue;">Folded normal distribution </a>
+    <li> <a href="http://en.wikipedia.org/wiki/Fr%C3%A9chet_distribution" style="color:blue;">Frechet distribution</a>
+    <li> <a href="http://threeplusone.com/gud" style="color:blue;">Gamma-exponential distribution</a>
+    <li> <a href="https://en.wikipedia.org/wiki/Gamma/Gompertz_distribution" style="color:blue;">Gamma/Gompertz distribution</a>
+    <li> <a href="https://en.wikipedia.org/wiki/Gauss-Kuzmin_distribution" style="color:blue;">Gauss-Kuzmin distribution</a>
+    <li> <a href="https://en.wikipedia.org/wiki/Gaussian_q-distribution" style="color:blue;">Gaussian q-distribution</a>
+    <li> <a href="http://en.wikipedia.org/wiki/Generalized_beta_distribution" style="color:blue;">Generalized beta distribution </a>
+    <li> <a href="http://en.wikipedia.org/wiki/Generalized_extreme_value_distribution" style="color:blue;">Generalized extreme value (Fisher-Tippett) distribution </a>
+    <li> <a href="https://en.wikipedia.org/wiki/Generalised_hyperbolic_distribution" style="color:blue;">Generalized hyperbolic distribution </a>
+    <li> <a href="http://www.tandfonline.com/doi/abs/10.1080/00949655.2011.647027#preview" style="color:blue;">Generalized inverted exponential distribution </a>
+    <li> <a href="http://en.wikipedia.org/wiki/Generalized_inverse_Gaussian_distribution" style="color:blue;">Generalized inverse Gaussian distribution </a>
+    <li> <a href="https://en.wikipedia.org/wiki/Generalized_normal_distribution" style="color:blue;">Generalized normal distribution </a>
+    <li> <a href="https://en.wikipedia.org/wiki/Generalized_Pareto_distribution" style="color:blue;">Generalized Pareto distribution </a>
+    <li> <a href="http://www.sciencedirect.com/science/article/pii/S0167947304001410" style="color:blue;">Generalized Rayleigh distribution </a>
+    <li> <a href="http://en.wikipedia.org/wiki/Geometric_stable_distribution" style="color:blue;">Geometric stable (Linnik) distribution </a>
+    <li> <a href="http://www.tandfonline.com/doi/abs/10.1080/03610920701215290?journalCode=lsta20#preview" style="color:blue;">Gilbert sine distribution </a>
+    <li> <a href="http://threeplusone.com/gud" style="color:blue;">Grand unified distribution</a>
+    <li> <a href="https://en.wikipedia.org/wiki/Half-logistic_distribution" style="color:blue;">Half logistic distribution </a>
+    <li> <a href="http://en.wikipedia.org/wiki/Half-normal_distribution" style="color:blue;">Half normal distribution </a>
+    <li> <a href="https://en.wikipedia.org/wiki/Holtsmark_distribution" style="color:blue;">Holtsmark distribution </a>
+    <li> <a href="https://en.wikipedia.org/wiki/Hotelling%27s_T-squared_distribution" style="color:blue;">Hotelling's T-squared distribution </a>
+    <li> <a href="https://en.wikipedia.org/wiki/Hyper-Erlang_distribution" style="color:blue;">Hyper-Erlang distribution </a>
+    <li> <a href="https://en.wikipedia.org/wiki/Inverse-chi-squared_distribution" style="color:blue;">Inverse chi-squared distribution</a>
+    <li> <a href="http://link.springer.com/article/10.1007%2Fs00362-009-0271-3" style="color:blue;">Inverse Weibull distribution</a>
+    <li> <a href="http://en.wikipedia.org/wiki/Irwin-Hall_distribution" style="color:blue;">Irwin-Hall (uniform sum) distribution </a>
+    <li> <a href="http://en.wikipedia.org/wiki/Johnson_SU_distribution" style="color:blue;">Johnson SU distribution</a>
+    <li> <a href="https://en.wikipedia.org/wiki/Kent_distribution" style="color:blue;">Kent distribution</a>
+    <li> <a href="http://books.google.com/books?id=VF5nXLvi_KUC&pg=PA104&dq=kolmogorov+smirnov+distribution+feller+1948&hl=en&sa=X&ei=3qaYU4m8OfSusATnn4HYBg&ved=0CCgQ6AEwAg#v=onepage&q=kolmogorov%20smirnov%20distribution%20feller%201948&f=false" style="color:blue;">Kolmogorov-Smirnov distribution</a>
+    <li> <a href="https://en.wikipedia.org/wiki/Kumaraswamy_distribution" style="color:blue;">Kumaraswamy distribution</a>
+    <li> <a href="http://www.idescat.cat/sort/sort362/36.2.3.pescim-etal.pdf" style="color:blue;">Kummer beta distribution</a>
+    <li> <a href="http://threeplusone.com/gud" style="color:blue;">Laha distribution</a>
+    <li> <a href="http://en.wikipedia.org/wiki/Landau_distribution" style="color:blue;">Landau distribution</a>
+    <li> <a href="https://en.wikipedia.org/wiki/Levy_distribution" style="color:blue;">Levy distribution</a>
+    <li> <a href="http://en.wikipedia.org/wiki/Location-scale_family" style="color:blue;">Location scale family</a>
+    <li> <a href="https://en.wikipedia.org/wiki/Log-Cauchy_distribution" style="color:blue;">Log Cauchy distribution</a>
+    <li> <a href="https://de.wikipedia.org/wiki/Logarithmische_Gammaverteilung" style="color:blue;">Log gamma distribution (alternative parameterization)</a>
+    <li> <a href="https://en.wikipedia.org/wiki/Log-Laplace_distribution" style="color:blue;">Log Laplace distribution</a>
+    <li> <a href="http://en.wikipedia.org/wiki/Logarithmic_distribution" style="color:blue;">Logarithmic series distribution</a>
+    <li> <a href="https://en.wikipedia.org/wiki/Logit-normal_distribution" style="color:blue;">Logit-normal distribution</a>
+    <li> <a href="https://en.wikipedia.org/wiki/Marchenko-Pastur_distribution" style="color:blue;">Marchenko-Pastur distribution</a>
+    <li> <a href="https://en.wikipedia.org/wiki/Matrix-exponential_distribution" style="color:blue;">Matrix-exponential distribution</a>
+    <li> <a href="https://en.wikipedia.org/wiki/Maximum_entropy_probability_distribution" style="color:blue;">Maximum entropy distribution</a>
+    <li> <a href="http://en.wikipedia.org/wiki/Maxwell_Boltzmann_distribution" style="color:blue;">Maxwell-Boltzmann distribution</a>
+    <li> <a href="https://en.wikipedia.org/wiki/Maxwell-Juttner_distribution" style="color:blue;">Maxwell-Juttner distribution</a>
+    <li> <a href="http://www.metalogs.org" style="color:blue;">Metalog distribution</a>
+    <li> <a href="https://en.wikipedia.org/wiki/Mittag-Leffler_distribution" style="color:blue;">Mittag-Leffler distribution</a>
+    <li> <a href="https://en.wikipedia.org/wiki/Mixture_distribution" style="color:blue;">Mixture distribution</a>
+    <li> <a href="https://en.wikipedia.org/wiki/Nakagami_distribution" style="color:blue;">Nakagami distribution</a>
+    <li> <a href="https://en.wikipedia.org/wiki/Natural_exponential_family" style="color:blue;">Natural exponential family</a>
+    <li> <a href="https://en.wikipedia.org/wiki/Noncentral_beta_distribution" style="color:blue;">Noncentral beta distribution</a>
+    <li> <a href="http://en.wikipedia.org/wiki/Noncentral_hypergeometric_distributions" style="color:blue;">Noncentral hypergeometric distribution</a>
+    Liao, J.G., Rosen, O. (2001), Fast and Stable Algorithms for Computing and Sampling from the Noncentral Hypergeometric Distribution, The American Statistician, Vol. 55, No. 4, 366-369. 
+    <li> <a href="https://en.wikipedia.org/wiki/Normal-inverse_Gaussian_distribution" style="color:blue;">Normal inverse Gaussian distribution</a>
+    <li> <a href="https://en.wikipedia.org/wiki/Panjer_recursion" style="color:blue;">Panjer recursion</a>
+    <li> <a href="https://en.wikipedia.org/wiki/Parabolic_fractal_distribution" style="color:blue;">Parabolic fractal distributions</a>
+    <li> <a href="http://en.wikipedia.org/wiki/Pearson_distribution" style="color:blue;">Pearson system of distributions</a>
+    <li> <a href="http://en.wikipedia.org/wiki/PERT_distribution" style="color:blue;">PERT distribution</a>
+    <li> <a href="https://en.wikipedia.org/wiki/Phase-type_distribution" style="color:blue;">Phase-type distribution</a>
+    <li> <a href="https://en.wikipedia.org/wiki/Poisson_binomial_distribution" style="color:blue;">Poisson-binomial distribution</a>
+    <li> <a href="https://en.wikipedia.org/wiki/Poly-Weibull_distribution" style="color:blue;">Poly-Weibull distribution</a>
+    <li> <a href="https://www.statisticshowto.com/polya-distribution/" style="color:blue;">Polya-Eggenberger distribution</a>
+    <li> <a href="http://threeplusone.com/gud" style="color:blue;">Prentice distribution</a>
+    <li> <a href="https://en.wikipedia.org/wiki/Q-exponential_distribution" style="color:blue;">Q-exponential distribution</a>
+    <li> <a href="https://en.wikipedia.org/wiki/Q-Gaussian_distribution" style="color:blue;">Q-Gaussian distribution</a>
+    <li> <a href="https://en.wikipedia.org/wiki/Q-Weibull_distribution" style="color:blue;">Q-Weibull distribution</a>
+    <li> <a href="http://www.tandfonline.com/doi/abs/10.1080/03610920802187430#.Ue6F5xYTs18" style="color:blue;">Quantile functions</a>
+    <li> <a href="https://en.wikipedia.org/wiki/Quantile-parameterized_distribution" style="color:blue;">Quantile-parametrized distributions</a>
+    <li> <a href="http://en.wikipedia.org/wiki/Rademacher_distribution" style="color:blue;">Rademacher distribution</a>
+    <li> <a href="https://en.wikipedia.org/wiki/Raised_cosine_distribution" style="color:blue;">Raised cosine distribution</a>
+    <li> <a href="https://en.wikipedia.org/wiki/Reciprocal_distribution" style="color:blue;">Reciprocal distribution</a>
+    <li> <a href="https://en.wikipedia.org/wiki/Rectified_Gaussian_distribution" style="color:blue;">Rectified Gaussian distribution (mixed discrete-continuous)</a>
+    <li> <a href="https://en.wikipedia.org/wiki/Relativistic_Breit-Wigner_distribution" style="color:blue;">Relativistic Breit-Wigner distribution</a>
+    <li> <a href="http://en.wikipedia.org/wiki/Rice_distribution" style="color:blue;">Rice distribution</a>
+    <li> <a href="https://en.wikipedia.org/wiki/Scaled_inverse_chi-squared_distribution" style="color:blue;">Scaled inverse chi-squared distribution</a>
+    <li> <a href="http://www.washingtonpost.com/wp-srv/special/metro/urban-jungle/pages/130122.html" style="color:blue;">Seba curves</a>
+    <li> <a href="https://en.wikipedia.org/wiki/Shifted_Gompertz_distribution" style="color:blue;">Shifted Gompertz distribution</a>
+    <li> <a href="https://en.wikipedia.org/wiki/Shifted_log-logistic_distribution" style="color:blue;">Shifted log logistic distribution</a>
+    <li> <a href="https://academic.oup.com/biomet/article/96/4/761/220523" style="color:blue;">Sinh-Arcsinh distribution</a>
+    <li> <a href="https://en.wikipedia.org/wiki/Skellam_distribution" style="color:blue;">Skellam distribution</a>
+    <li> <a href="https://en.wikipedia.org/wiki/Skewed_generalized_t_distribution" style="color:blue;">Skewed generalized t distribution</a>
+    <li> <a href="https://en.wikipedia.org/wiki/Skew_normal_distribution" style="color:blue;">Skew normal distribution</a>
+    <li> <a href="https://en.wikipedia.org/wiki/Slash_distribution" style="color:blue;">Slash distribution</a>
+    <li> <a href="https://en.wikipedia.org/wiki/Soliton_distribution" style="color:blue;">Soliton distribution</a>
+    <li> <a href="http://en.wikipedia.org/wiki/Stable_distribution" style="color:blue;">Stable distribution</a>
+    <li> <a href="http://books.google.com/books?id=VF5nXLvi_KUC&pg=PA104&lpg=PA104&dq=theta+distribution+renyi+szekeres+1967&source=block diagram&ots=tTcBUobZyC&sig=Dp-CNbvogM5oMExvbUIXhg9rMcc&hl=en&sa=X&ei=S6aYU72IEKfJsQSEvYBQ&ved=0CB0Q6AEwAA#v=onepage&q=theta%20distribution%20renyi%20szekeres%201967&f=false" style="color:blue;">Theta distribution</a>
+    <li> <a href="https://en.wikipedia.org/wiki/Tracy%E2%80%93Widom_distribution" style="color:blue;">Tracy-Widom distribution</a>
+    <li> <a href="http://en.wikipedia.org/wiki/Truncated_normal_distribution" style="color:blue;">Truncated normal distribution</a>
+    <li> <a href="https://www.statisticshowto.datasciencecentral.com/g-and-h-distribution/" style="color:blue;">Tukey g-and-h distribution 1;</a>
+         <a href="https://rss.onlinelibrary.wiley.com/doi/10.1111/j.1740-9713.2019.01273.x" style="color:blue;">Tukey g-and-h distribution 2</a>
+    <li> <a href="http://en.wikipedia.org/wiki/Tukey_lambda_distribution" style="color:blue;">Tukey lambda distribution</a>
+    <li> <a href="http://en.wikipedia.org/wiki/Tukey's_range_test" style="color:blue;">Tukey studentized range distribution</a>
+    <li> <a href="https://en.wikipedia.org/wiki/Tweedie_distribution" style="color:blue;">Tweedie distribution</a>
+    <li> <a href="https://en.wikipedia.org/wiki/Type-1_Gumbel_distribution" style="color:blue;">Type I Gumbel distribution</a>
+    <li> <a href="https://en.wikipedia.org/wiki/Type-2_Gumbel_distribution" style="color:blue;">Type II Gumbel distribution</a>
+    <li> <a href="http://en.wikipedia.org/wiki/U-quadratic_distribution" style="color:blue;">U-quadratic distribution</a>
+    <li> <a href="https://en.wikipedia.org/wiki/Variance-gamma_distribution" style="color:blue;">Variance gamma distribution</a>
+    <li> <a href="https://en.wikipedia.org/wiki/Voigt_profile" style="color:blue;">Voigt distribution</a>
+    <li> <a href="http://en.wikipedia.org/wiki/Wigner_semicircle_distribution" style="color:blue;">Wigner semicircle distribution</a>
+    <li> <a href="https://en.wikipedia.org/wiki/Wilks%27s_lambda_distribution" style="color:blue;">Wilk's lambda distribution</a>
+    <li> <a href="https://en.wikipedia.org/wiki/Wrapped_distribution" style="color:blue;">Wrapped distribution</a>
+    <li> <a href="https://en.wikipedia.org/wiki/Wrapped_asymmetric_Laplace_distribution" style="color:blue;">Wrapped asymmetirc Laplace distribution</a>
+    <li> <a href="https://en.wikipedia.org/wiki/Wrapped_Cauchy_distribution" style="color:blue;">Wrapped Cauchy distribution</a>
+    <li> <a href="https://en.wikipedia.org/wiki/Wrapped_exponential_distribution" style="color:blue;">Wrapped exponential distribution</a>
+    <li> <a href="https://en.wikipedia.org/wiki/Wrapped_Levy_distribution" style="color:blue;">Wrapped Levy distribution</a>
+    <li> <a href="https://en.wikipedia.org/wiki/Wrapped_normal_distribution" style="color:blue;">Wrapped normal distribution</a>
+    <li> <a href="https://en.wikipedia.org/wiki/Yule-Simon_distribution" style="color:blue;">Yule-Simon distribution</a>
+    <li> <a href="https://en.wikipedia.org/wiki/Zero-inflated_model" style="color:blue;">Zero inflated Poisson (ZIP) distribution</a>
+    <li> <a href="https://en.wikipedia.org/wiki/Zipf-Mandelbrot_law" style="color:blue;">Zipf-Mandelbrot distribution</a>
+    </li>
+		</ul>
+
+		<h2>Are there other relationships between univariate distributions?</h2>
+		<p>Some relationships did not fit on the chart because the chart needed to be a planar graph.  Other relationships involve the combination of two random variables to create a third.  Examples include</p>
+
+		<ul>
+    <li> A scaled F random variable converges to a normal random variable as the degrees of freedom go to infinity. 
+         (See <a href="FNormal.pdf" style="color:blue;"> proof by Hans Brunner and Stefano Bettelli</a>.)
+    <li>  The ratio of a standard normal random variable Z to the square root of an independent chi-square(n) random
+variable divided by its degrees of freedom has the t distribution with n degrees of freedom.
+    <li>  Let Z be standard normal.  Let W be unit exponential.  Let Z and W be independent.  Then mu + sigma * sqrt(W) * Z has a symmetric Laplace distribution with mean mu and standard deviation sigma.  The parameterization differs from that given in the chart.  See Geraci and Borja, "The Laplace Distribution", Significance, Volume 15, Issue 5, October 2018, 10-11.
+    <li>  Let Y be Gompertz.  Then exp(-Y) is Weibull and exp(Y) is inverse Weibull.  See page 179 of Kleiber, Christian; Kotz, Samuel (2003). Statistical Size Distributions in Economics and Actuarial Sciences, Wiley.
+    </li>
+		</ul>
+		<h2>Is there more information available?</h2>
+		
+		<p>Clicking on a distributon's name will download a .pdf file that includes the cumulative distribution function, survivor function, hazard function, cumulative
+    hazard function, inverse distribution function, and (where applicable) the moments and moment generating function. For even more information, see the "Links" tab.  A nice on-line compendium is given by <a href="http://threeplusone.com/gud" style="color:blue;">Gavin Crooks</a> </p>
+		
+
+		<h2>Who developed the interactive graphic website?</h2>
+
+The main developers were Lawrence Leemis, Daniel Luckett, Austin Powell, Jackie Taber,
+and Peter Vermeer (all from
+the <a href="http://www.wm.edu/as/mathematics/graduate/cor/about/index.php" style="color:blue;">
+ COR (Computational Operations Research) program</a>
+at The College of William & Mary).  Other contributors are:
+    Tim Adams,
+    Stefano Bettelli,
+    Ruben Becerril Borja,
+    Hans Brunner,
+    Ryan Carpenter,
+    Erin Catlett,
+    Danny Cogut,
+    Chad Conrad,
+    Laura Decena,
+    Evan Elsaesser,
+    Luke Godwin--Jones,
+    Matt Goldman,
+    Matt Hanson,
+    Yan Hao,
+    Billy Kaczynski,
+    Andrew Mashchak,
+    Maximilian Matthe,
+    James McCormack,
+    Lee McDaniel,
+    Lauren Merrill,
+    Erik Olsen,
+    Scott Percic,
+    Jean Peyhardi,
+    Robin Ryder,
+    Evan Saltzman,
+    Christian Schr&ouml;der,
+    Erich Schubert,
+    Witold Siedlaczek,
+    Maciej Swat,
+    Chris Thoma,
+    Melissa Tilashalski,
+    Erik Vargo,
+    Chris Weld,
+    Jeff Yang,
+    Vincent Yannello,
+    Hang Yu, and
+    Andrei Zorine.
+    Support also came from the National Science Foundation.
+
+		<h2>What if I found something wrong, something missing, or want to contribute a proof?</h2>
+		
+		</p>Questions and concerns may be directed to leemis (AT) math (doTT) wm (d0T) edu</p>
+	</div>
+</body>
+</html>
