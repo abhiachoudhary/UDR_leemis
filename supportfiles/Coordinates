@@ -1,0 +1,295 @@
+
+
+DiscreteuniformR circle 444 118
+DiscreteuniformV circle 480 114
+PoissonC circle 1074 260
+GeometricF circle 92 474
+GeometricM circle 132 476
+GeometricV circle 172 476
+PascalC circle 472 508
+BinomialC circle 1298 352
+NormalL circle 964 532
+DiscreteweibullV circle 182 616
+RectangularV circle 852 116
+ArctangentS circle 212 788
+ArctangentV circle 246 788
+Hyperbolic-secantV circle 170 916
+CauchyC circle 132 1056
+CauchyI circle 166 1058
+CauchyS circle 192 1056
+CauchyV circle 288 1056
+StandardwaldS circle 462 1096
+InversegaussianL circle 456 908
+ChisquareC circle 870 1040
+NoncentralchisquareC circle 816 772
+LognormalP circle 1350 650
+BernoulliM circle 1726 370
+BernoulliP circle 1764 368
+BernoulliX circle 1800 370
+GammaC circle 1378 898
+GammaS circle 1432 902
+ArcsinV circle 1760 1032
+StandardcauchyI circle 118 1226
+StandardcauchyS circle 149 1226
+StandardcauchyV circle 183 1226
+HypoexponentialC circle 979 1188
+ErlangS circle 1386 1173
+GompertzV circle 1695 1255
+LogisticexponentialS circle 1327 1321
+LogisticexponentialV circle 1363 1321
+ExponentialForgetfullness circle 843 1337
+ExponentialM circle 883 1337
+ExponentialS circle 919 1337
+ExponentialV circle 955 1337
+FI circle 415 1370
+ErrorS circle 1196 1542
+StandarduniformV circle 1431 1525
+ExponentialpowerV circle 1700 1413
+MinimaxM circle 1731 1548
+MinimaxV circle 1790 1548
+StandardpowerV circle 1686 1698
+StandardpowerX circle 1723 1698
+StandardtriangularV circle 1387 1793
+LaplaceV circle 928 1641
+ParetoM circle 846 1775
+ParetoV circle 886 1775
+RayleighM circle 569 1775
+RayleighS circle 606 1775
+RayleighV circle 640 1775
+WeibullM circle 689 1904
+WeibullS circle 743 1904
+WeibullV circle 777 1904
+LoglogisticI circle 1006 1898
+LoglogisticS circle 1035 1898
+LoglogisticV circle 1070 1898
+BenfordV circle 1255 1943
+TSPV circle 1491 1888
+PowerS circle 1713 1827
+PowerV circle 1748 1827
+PowerX circle 1785 1827
+UniformR circle 1740 1920
+UniformV circle 1778 1920
+VonmisesS circle 1744 2050
+KolmogorovsmirnovV circle 1662 2149
+TriangularV circle 1352 2151
+LogisticS circle 1083 2148
+LogisticV circle 1119 2148
+LomaxV circle 1025 2041
+ExtremevalueV circle 740 2050
+ExtremevalueM circle 798 2050
+
+
+
+ZipfDiscreteuniform polygon 229 103 321 89 321 115
+ZipfZeta polygon 56 142 116 205 90 205
+DiscreteuniformRectangular polygon 603 111 743 100 743 119
+BetabinomialRectangular polygon  962 69 962 93 1024 81
+BetabinomialNegativehypergeometric polygon 1306 105 1400 92 1400 118 
+NegativehypergeometricBinomial polygon 1371 299 1540 139 1543 308
+BinomialBernoulli polygon 1399 344 1666 334 1666 354
+BernoulliBinomial polygon 1666 363 1400 354 1400 372
+HypergeometricBinomial polygon 1509 207 1400 325 1398 301
+PolyaBinomial polygon 1319 424 1318 377 1285 377
+BinomialBetabinomial polygon 1304 299 1279 142 1259 142
+BinomialPoisson polygon 1263 299 1165 256 1165 277
+BinomialNormal polygon 1213 346 1036 474 1060 479
+PoissonNormal polygon 1048 283 1009 474 1040 474
+PowerseriesPoisson polygon 774 205 977 210 977 230
+PowerseriesLogarithm polygon 492 205 446 208 447 176
+PowerseriesPascal polygon 593 267 533 456 549 454
+GammapoissonPascal polygon 603 322 566 454 553 456
+PascalGeometric polygon 384 470 229 447 229 463
+GeometricPascal polygon 228 480 384 483 384 502
+DiscreteweibullGeometric polygon 71 563 85 502 61 502
+PascalNormal polygon 571 504 853 496 853 513
+PascalPoisson polygon 571 462 747 435 885 383 1019 283 1043 284 916 385 785 445 635 471 
+PoissonGammapoisson polygon 978 254 884 316 884 343
+NormalGammanormal polygon 1072 492 1314 505 1540 504 1544 520 1369 520 1194 511 
+PascalBetapascal polygon 522 454 431 378 432 346
+StandardnormalNormal polygon 855 539 557 560 570 579 857 546
+NormalStandardnormal polygon 863 553 571 604 571 622
+NormalNoncentralchisquare polygon 889 555 740 718 714 719
+NormalLognormal polygon 1072 527 1248 608 1262 5991072 514
+StandardnormalChisquare polygon 508 642 765 993 759 1010
+StandardnormalChipolygon 530 642 697 865 697 698 893 522 644
+ChisquareChi polygon 771 988 725 902 701 904
+InversegaussianChisquare polygon 655 888 762 1014 759 1035
+InversegaussianStandardnormal polygon 388 864 439 643 422 642
+InversegaussianStandardwald polygon 374 924 361 1043 341 1049
+CauchyArctangent polygon 277 1037 310 812 329 805 
+NoncentralbetaBeta polygon 1834 630 1826 814 1844 815
+BetaArcsin polygon 1840 891 1830 977 1852 990
+BetaInvertedbeta polygon 1666 876 1599 1029 1604 1062 
+GammaInvertedbeta polygon 1349 924 1370 1019 1351 1040
+GammaChisquare polygon 1321 923 978 1032 978 1014
+GammaChisquare polygon 1310 905 979 1011 973 993
+GammaInvertedgamma polygon 1310 872 1266 871 1265 843 
+GammaBeta polygon 1496 872 1665 863 1665 879
+GeneralizedgammaLognormal polygon 1353 759 1275 687 1247 676
+GeneralizedgammaGamma polygon 1389 799 1448 844 1419 843
+GammaLoggamma polygon 1378 844 1241 734 1238 703
+GammaNormal polygon 1407 846 1260 697 1095 544 1071 531 1086 556 1400 844
+NormalChisquare polygon 988 555 987 779 934 912 890 984 909 987 106 815 1020 554
+NoncentralchisquareChisquare polygon 962 799 861 986 883 986 930 917 968 798
+BetaNormal polygon 1815 814 1686 721 1441 596 1073 511 1107 502 1413 558 1679 891 1829 814
+StandardnormalStandardcauchy polygon 369 642 251 1174 265 1298
+CauchyStandardcauchy polygon 151 1080 140 1174 159 1174
+ChisquareF polygon 759 1045 389 1313 418 1313 
+ChisquareExponential polygon 810 1064 819 1283 836 1283 826 1064
+ChisquareErlang polygon 977 1049 1299 1129 1316 1110 980 1033
+GammaErlang polygon 1325 923 1335 1117 1353 1119
+BetaStandarduniform polygon 1693 1895 1477 1471 1499 1471
+MakehamGompertz polygon 1633 1125 1619 1204 1595 1201
+StandardcauchyHyperbolicsecant polygon 57 944 69 949 69 1172 57 1172
+StandardcauchyCauchy polygon 162 1082 174 1082 174 1172 162 1172
+TStandardcauchy polygon 260 1215 306 1218 258 1239
+TStandardnormal polygon 298 1170 401 645 419 645 315 1159
+TF polygon 395 1238 372 1313 475 1237
+HypoexponentialErlang polygon 1121 1181 1294 1169 1294 1180 1120 1200
+ErlangExponential polygon 1295 1178 996 1276 999 1285 1298 1186
+ErlangChisquare polygon 1293 1163 885 1071 916 1066
+LogisticexponentialExponential polygon 1185 1303 1020 1306 1020 1323 1185 1317
+ExponentialHypoexponential polygon 891 1281 935 1214 957 1213 910 1281
+ExponentialErlang polygon 1004 1289 1303 1192 1317 1200 1010 1300
+ExponentialChisquare polygon 805 1284 789 1066 800 1066 810 1284
+ExponentialF polygon 511 1328 792 1292 789 1305 509 1343
+ErrorLaplace polygon 1042 1644 1061 1650 1220 1567
+ExponentialHyperxponential polygon 496 1423 788 1308 789 1315 530 1424
+ExponentialRayleigh polygon 584 1719 594 1719 796 1355
+ExponentialWeibull polygon 735 1851 748 1851 817 1362
+ExponentialLaplace polygon 990 1363 1019 1477 1020 1588 1010 1588 1009 1450
+FChisquare polygon 435 1313 762 1059 778 1065 454 1313
+NoncentraltT polygon 245 1310 357 1237 384 1238 261 1312
+DoublynoncentraltNonentralt polygon 140 1393 140 1454 172 1454
+HyperexponentialExponential polygon 548 1423 789 1322 773 1346
+MuthExponential polygon 977 1363 983 1466 1004 1475 990 1383
+StandarduniformStandardpower polygon 1556 1516 1789 1640 1757 1640
+StandarduniformUniform polygon 1410 1552 1677 1868 1664 1879
+StandarduniformStandardtriangular polygon 1272 1739 1366 1552 1299 1737
+StandarduniformBenford polygon 1168 1890 1350 1550 1190 1890
+StandarduniformLoglogistic polygon 1148 1856 1334 1557 1151 1900
+StandarduniformPareto polygon 955 1779 1203 1657 1323 1549
+StandarduniformExponential polygon 1008 1349 1011 1326 1326 1470 1305 1488
+StandarduniformLogisticexponential polygon 1437 1469 1497 1345 1458 1469
+StandarduniformBeta polygon 1677 891 1660 914 1470 1471 1673 920
+StandarduniformGompertz polygon 1509 1471 1585 1241 1583 1282
+StandarduniformExponentialpower polygon 1528 1470 1546 1399 1550 1445
+MinimaxStandardpower polygon 1695 1571 1833 1642 1802 1640
+StandardpowerStandarduniform polygon 1743 1641 1557 1531 1545 1547
+LaplaceExponential polygon 1027 1589 1024 1467 996 1359 1020 1375 1035 1495
+LaplaceError polygon 1041 1640 1208 1566 1178 1566
+ParetoExponential polygon 771 1727 823 1363 836 1363
+IDBExponential polygon 625 1634 790 1345 626 1594
+IDBRayleigh polygon 503 1654 527 1719 528 1655
+RayleighExponential polygon 596 1720 796 1356 789 1388 605 1719
+NoncentralfF polygon 384 1594 399 1393 420 1393
+DoublynoncentralfNoncentralf polygon 137 1719 195 1661 176 1719
+WeibullRayleigh polygon 684 1796 702 1776 708 1850
+WeibullExponential polygon 731 1850 716 1851 800 1360 811 1361
+WeibullExtremevalue polygon 652 1932 665 1996 679 1931
+LoglogisticLomax polygon 1039 1925 1039 1983 1028 1983 1028 1925
+TSPTriangular polygon 1387 2093 1534 1914 1553 1914 1419 2095
+PowerStandardpower polygon 1781 1721 1770 1766 1793 1766
+UniformStandarduniform polygon 1664 1899 1372 1550 1406 1563
+UniformKolmogorovsmirnov polygon 1671 1938 1561 2095 1568 2059 1656 1939
+VonmisesUniform polygon 1781 1946 1767 1994 1735 1993
+KolmogorovsmirnovUniform polygon 1563 2094 1575 2094 1676 1944 1672 1940
+TriangularStandardtriangular polygon 1347 2093 1357 1818 1371 1818 1360 2094
+LomaxLoglogistic polygon 1041 1984 1041 1925 1050 1925 1050 1984 
+GeneralizedparetoPareto polygon 920 2094 886 1801 901 1801 932 2094
+
+
+
+Zipf rect 38 64 228 142
+Discreteuniform rect 324 64 602 142
+Rectangular rect 742 64 956 142 
+Betabinomial rect 1022 64 1306 142
+Negativehypergeometric rect 1400 64 1854 142
+Zeta rect 38 206 228 284
+Logarithm rect 258 172 448 252
+Powerseries rect 490 188 776 270
+Poisson rect 976 202 1166 282
+Binomial rect 1210 298 1400 378
+Hypergeometric rect 1506 190 1852 270
+Bernoulli rect 1664 313 1854 396
+BetaPascal rect 182 318 432 394
+Gammapoisson rect 602 298 884 374
+Geometric rect 40 422 230 502
+Pascal rect 384 452 572 532
+Normal rect 850 474 1070 553
+Polya rect 1306 424 1492 500
+Gammanormal rect 1536 448 1852 530
+Discreteweibull rect 38 564 320 642
+Standardnormal rect 354 564 572 644
+Arctangent rect 118 734 332 804
+Hyperbolicsecant rect 42 864 284 938
+Cauchy rect 88 1002 272 1078
+Inversegaussian rect 378 864 652 936
+Standardwald rect 342 1050 584 1118
+Noncentralchisquare rect 644 722 982 796
+Chi rect 700 828 882 898
+Chisquare rect 762 988 974 1062
+Loggamma rect 1020 694 1240 770
+Invertedgamma rect 988 838 1264 912
+Lognormal rect 1240 602 1456 678
+Generalizedgamma rect 1352 720 1694 798
+Gamma rect 1310 846 1494 922
+Invertedbeta rect 1352 1020 1600 1092
+Beta rect 1662 816 1852 892
+Arcsin rect 1666 976 1854 1054
+Makeham rect 1632 1084 1850 1158
+Noncentralbeta rect 1540 552 1850 630
+Standardcauchy rect 39 1175 259 1251
+T rect 306 1158 493 1234
+Hypoexponential rect 837 1134 1119 1210
+Erlang rect 1294 1120 1481 1196
+Gompertz rect 1588 1206 1805 1283
+Logisticexponential rect 1185 1268 1510 1344
+Exponential rect 790 1286 1008 1360
+F rect 319 1314 508 1390
+Noncentralt rect 39 1314 290 1391
+Doublynoncentralt rect 40 1456 383 1532
+Hyperexponential rect 416 1425 695 1498
+Muth rect 819 1469 1005 1545
+Error rect 1102 1490 1288 1563
+Standarduniform rect 1306 1472 1555 1547
+Exponentialpower rect 1549 1363 1851 1439
+Minimax rect 1665 1494 1850 1568
+Standardpower rect 1556 1643 1852 1719
+Standardtriangular rect 1263 1739 1512 1815
+Laplace rect 821 1590 1039 1666
+Pareto rect 767 1724 955 1798
+IDB rect 442 1575 625 1652
+Rayleigh rect 508 1722 693 1797
+Noncentralf rect 69 1582 383 1657
+Doublynoncentralf rect 40 1721 478 1797
+Weibull rect 634 1854 838 1929 
+Loglogistic rect 930 1846 1148 1924
+Benford rect 1162 1892 1349 1970
+TSP rect 1385 1836 1602 1911
+Power rect 1664 1769 1852 1844 
+Uniform rect 1664 1867 1852 1944
+Vonmises rect 1635 1996 1852 2072
+Kolmogorovsmirnov rect 1509 2096 1852 2173
+Triangular rect 1227 2096 1478 2174
+Logistic rect 1008 2096 1195 2175
+Lomax rect 931 1986 1117 2065
+Generalizedpareto rect 634 2097 979 2171
+Extremevalue rect 635 2000 902 2072
+
+
+
+Convolution rect 50 1860 325 1891
+Forgetfulness rect 50 1891 325 1922
+Inverse rect 50 1922 325 1953
+Linearcombination rect 50 1953 325 1984
+Minimum rect 50 1984 325 2015
+Product rect 50 2015 325 2046
+Residual rect 50 2046 325 2077
+Scaling rect 50 2077 325 2108
+Variategeneration rect 50 2108 325 2139
+Maximum rect 50 2139 325 2170
+Specialcases rect 330 2046 610 2077
+Transformations rect 330 2077 610 2108
+Limiting rect 330 2108 610 2139
+Bayesian rect 330 2139 610 2170
