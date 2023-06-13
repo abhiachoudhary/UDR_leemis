@@ -1,0 +1,67 @@
+%
+%  Vincent Yannello
+%
+\documentclass[12pt,fullpage]{article}
+\usepackage{fullpage}
+\usepackage{amsmath}
+\DeclareMathOperator{\erf}{erf}
+\usepackage{psfrag}                                          % LaTeX graphics tool
+\usepackage{pslatex}                                         % avoids the default cmr font
+\usepackage{graphicx}                                        % graphics package 
+\usepackage{epsfig}                                          % figures
+\usepackage{hyperref}
+\usepackage{color}
+
+\begin{document}
+
+\noindent
+{\bf Noncentral t distribution} (from \color{blue}\url{http://www.math.wm.edu/~leemis/chart/UDR/UDR.html}\color{black})
+
+\noindent
+The shorthand $X \sim {\rm noncentral\ t}(n,\, \delta)$ is used to indicate that the
+random variable $X$ has the noncentral t distribution with positive integer
+parameter $n$ and real-valued noncentrality parameter $\delta$.
+A noncentral t random variable $X$ with parameters $n$ and $\delta$ has probability density function 
+$$
+f(x) = \frac{n ^ {n / 2} e ^ {-\delta ^ {\kern 0.08 em 2} / 2}}{\sqrt{\pi} \kern 0.08 em \Gamma(n / 2)(n + x ^ 2) ^ {(n + 1) / 2}} \cdot \kern -0.08 em
+\displaystyle\sum_{i \kern 0.08 em = \kern 0.08 em 0} ^ {\infty} \frac{\Gamma[(n + i + 1) / 2]} {i!} \left(\frac{x \delta \sqrt{2}}{\sqrt{n + x ^ 2}} \right) ^ {\kern -0.08 em i} 
+\qquad \qquad -\infty < x < \infty,
+$$
+for all $\delta$ and any positive integer $n$.
+
+\vspace{0.1in}
+\noindent
+The cumulative distribution, survivor, hazard, 
+cumulative hazard, inverse distribution, moment generating, and characteristic functions on the support 
+of $X$ are mathematically intractable.
+
+\vspace{0.1in}
+\noindent
+The population mean and variance of $X$ are 
+$$
+E[X] = \delta \kern 0.08 em \sqrt{\frac{n} {2}} \ \frac{\Gamma((n - 1) / 2)} {\Gamma(n / 2)} \qquad n > 1 \qquad \qquad 
+$$
+$$
+V[X] = \frac{n (1 + \delta ^ {\kern 0.08 em 2})} {n - 2} - \frac{\delta ^ {\kern 0.08 em 2} n} {2} \left(\frac{\Gamma((n - 1) / 2)} {\Gamma(n / 2)} \right) ^ {\kern -0.08 em 2} \qquad  n > 2. \qquad \qquad 
+$$
+
+%\vspace{0.1in}
+
+%\noindent
+%{\bf APPL failure:}
+%The APPL statements
+%\begin{verbatim}
+%assume(delta > 0);
+%assume(n > 0);
+%X := [[x -> n^(n/2)*exp(-(delta^2)/2)/(sqrt(Pi)*GAMMA(n/2)*(n+x^2)^(n/2+1/2))*
+%      sum(GAMMA((n+i+1)/2)/factorial(i)*(x*delta*sqrt(2)/sqrt(n+x^2))^i, 
+%      i=0..infinity)],[0, infinity], ["Continuous", "PDF"]];
+%CDF(X);
+%SF(X);
+%HF(X);
+%CHF(X);
+%IDF(X);
+%\end{verbatim}
+%fail to yield the cumulative distribution, survivor, hazard, cumulative hazard, and inverse distribution functions.
+
+\end{document}
