@@ -1,0 +1,57 @@
+%
+%  Vincent Yannello
+%
+\documentclass[12pt,fullpage]{article}
+\usepackage{fullpage}
+\usepackage{amsmath}
+\DeclareMathOperator{\erf}{erf}
+\usepackage{psfrag}                                          % LaTeX graphics tool
+\usepackage{pslatex}                                         % avoids the default cmr font
+\usepackage{graphicx}                                        % graphics package 
+\usepackage{epsfig}                                          % figures
+\usepackage{hyperref}
+\usepackage{color}
+
+\begin{document}
+
+\noindent
+{\bf Noncentral beta distribution} (from \color{blue}\url{http://www.math.wm.edu/~leemis/chart/UDR/UDR.html}\color{black})
+
+\noindent
+The shorthand $X \sim {\rm noncentral\ beta}(\beta,\, \gamma,\, \delta)$ is used to indicate that the
+random variable $X$ has the noncentral beta distribution with positive parameters $\beta$, $\gamma$, and positive noncentrality parameter $\delta$.
+A noncentral beta random variable $X$ with parameters $\beta$, $\gamma$, $\delta$ has probability density function 
+$$
+f(x) = \displaystyle\sum_{i \kern 0.08 em = \kern 0.08 em 0} ^ {\infty} \frac{\Gamma(i + \beta + \gamma)} {\Gamma (\gamma) \Gamma(i + \beta)}
+\left(\frac{e ^ {-\delta / 2}} {i!} \right) \left(\frac{\delta} {2} \right) ^ { \kern -0.08 em i} x ^ {\kern 0.08 em i + \beta - 1} (1 - x) ^ {\gamma - 1} \qquad \qquad 0 < x < 1,
+$$
+for all $\beta > 0$, $\gamma > 0$, $\delta > 0$.
+
+\vspace{0.1in}
+\noindent
+The cumulative distribution, survivor, hazard, cumulative hazard, 
+inverse distribution, moment generating, and characteristic functions on
+the support of $X$ are mathematically intractable.
+
+\vspace{0.1in}
+\noindent
+The population mean, variance, skewness, and kurtosis of $X$ are mathematically intractable.
+
+\vspace{0.1in}
+
+\noindent
+%{\bf APPL failure:}
+%The APPL statements
+%\begin{verbatim}
+%X :=[[x -> sum(GAMMA(i+beta+y)/GAMMA(y)/GAMMA(i+beta)*(exp(-delta/2)
+%    /factorial(i))*(delta/2)^i*x^(i+beta-1)*(1-x)^(y-1),i=0..infinity)],
+%    [0,1],["Continuous","PDF"]];
+%CDF(X);
+%SF(X);
+%HF(X);
+%CHF(X);
+%IDF(X);
+%\end{verbatim}
+%fail to yield the cumulative distribution, survivor, hazard, cumulative hazard, and inverse distribution functions.
+
+\end{document}
