@@ -1,0 +1,43 @@
+%
+%  Vincent Yannello
+%
+\documentclass[12pt,fullpage]{article}
+\usepackage{fullpage}
+\usepackage{amsmath}
+\DeclareMathOperator{\erf}{erf}
+\usepackage{psfrag}                                          % LaTeX graphics tool
+\usepackage{pslatex}                                         % avoids the default cmr font
+\usepackage{graphicx}                                        % graphics package 
+\usepackage{epsfig}                                          % figures
+\usepackage{hyperref}
+\usepackage{color}
+
+\begin{document}
+
+\noindent
+{\bf Doubly noncentral t distribution} (from \color{blue}\url{http://www.math.wm.edu/~leemis/chart/UDR/UDR.html}\color{black})
+
+\noindent
+The shorthand $X \sim {\rm t''}(n,\, \delta,\, \gamma)$ is used to indicate that the
+random variable $X$ has the doubly noncentral t distribution with positive integer parameter $n$ and positive noncentrality parameters $\delta$, $\gamma$.
+A doubly noncentral t random variable $X$ with parameters $n$, $\delta$, and $\gamma$ is defined by the transformation
+$$
+t''(n, \delta, \gamma) = \frac{U + \delta}{\chi'(n, \gamma)/\sqrt{n}}
+$$
+with $U$ being a $N(0,1)$ random variable and $\chi'(n, \gamma)$ being distributed as a mixture of $\chi (n + 2j)$ distributions
+in proportions $e^{-\gamma/2}(\gamma/2)^j/j!$, $j = 0, \, 1, \, 2, \, \ldots \,$.
+
+\vspace{0.1in}
+\noindent
+Alternative representations exist, and can be found along with additional information
+on page 533 of Johnson, N.L., Kotz, S., and Balakrishnan, N. (1994),
+``Continuous Univariate Distribuions'' (Vol. I, 2nd ed.), New York: Wiley.
+See also
+Krishnan, Marakatha (1968), ``Series Representation of the Doubly Noncentral $t$-Distribution,'' {\it Journal of the American Statistical Association},
+Volume 63, Number 323, pp.\ 1004--1012.
+
+\vspace{0.1in}
+
+\noindent
+
+\end{document}

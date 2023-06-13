@@ -1,0 +1,52 @@
+%
+%  Scott Percic
+%
+\documentclass[12pt,fullpage]{article}
+\usepackage{fullpage}
+\usepackage{psfrag}                                          % LaTeX graphics tool
+\usepackage{pslatex}                                         % avoids the default cmr font
+\usepackage{graphicx}                                        % graphics package 
+\usepackage{epsfig}                                          % figures
+\usepackage{hyperref}
+\usepackage{color}
+
+\begin{document}
+
+\noindent
+{\bf Power series distribution} (from \color{blue}\url{http://www.math.wm.edu/~leemis/chart/UDR/UDR.html}\color{black})
+
+\noindent
+A power series random variable $X$ has probability mass function 
+$$
+f(x) = \frac{a_{x} \kern 0.08 em c ^ {\kern 0.08 em x}} {A (c)} \qquad \qquad x= 0,\,1,\,2, \,\ldots 
+$$
+for $a_{x} > 0$, $c > 0$, and series function $A(c) = \sum a_{x} \kern 0.08 em  c ^ {\kern 0.08 em x}$.
+
+\vspace{0.05in}
+
+\noindent
+The cumulative distribution function on the support of $X$ is
+$$
+F(x) = P(X \le x) = \sum_{w = 0} ^ {x} \frac{a_{w}\kern 0.08 em c ^ {\kern 0.08 em w}} {A(c)} \qquad \qquad x= 0,\,1,\,2,\, \ldots \, .
+$$
+The survivor function on the support of $X$ is
+$$
+S(x) = P(X \ge x) = \sum_{w=x} ^ {\infty} \frac{a_ {w}\kern 0.08 em c ^ {\kern 0.08 em w}} {A(c)} \qquad \qquad x= 0,\,1,\,2,\, \ldots \, .
+$$
+The hazard function on the support of $X$ is
+$$
+h(x) = \frac{f(x)}{S(x)} = \frac{a_{x} c ^ {x}}{\sum_{w = x} ^ {\infty} a_{w} \kern 0.04 em c ^ {\kern 0.04 em w}} \qquad \qquad x=
+0,\,1,\,2,\, \ldots \, .
+$$
+The moment generating function of $X$ is
+$$
+M(t) = \frac{A \left( c e ^ {\kern 0.08 em t} \right)} {A(c)} \qquad \qquad t > 0.
+$$
+The population mean of $X$ is
+$$
+E[X] = c \frac{d} {d c} [\ln A(c)].
+$$
+The variance, skewness, and kurtosis of $X$ are mathematically intractable.\\
+\vspace{0.1in}
+
+\end{document}
