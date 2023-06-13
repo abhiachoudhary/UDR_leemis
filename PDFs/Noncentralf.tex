@@ -1,0 +1,72 @@
+%
+%  Vincent Yannello
+%
+\documentclass[12pt,fullpage]{article}
+\usepackage{fullpage}
+\usepackage{amsmath}
+\DeclareMathOperator{\erf}{erf}
+\usepackage{psfrag}                                          % LaTeX graphics tool
+\usepackage{pslatex}                                         % avoids the default cmr font
+\usepackage{graphicx}                                        % graphics package 
+\usepackage{epsfig}                                          % figures
+\usepackage{hyperref}
+\usepackage{color}
+
+\begin{document}
+
+\noindent
+{\bf Noncentral F distribution} (from \color{blue}\url{http://www.math.wm.edu/~leemis/chart/UDR/UDR.html}\color{black})
+
+\noindent
+The shorthand $X \sim {\rm noncentral\ F}(n_1,\, n_2,\, \delta)$ is used to indicate that the
+random variable $X$ has the noncentral F distribution with positive integer parameters $n_1$, $n_2$,
+and positive noncentrality parameter $\delta$.
+A noncentral F random variable $X$ with parameters $n_1$, $n_2$, and $\delta$ has probability density function 
+$$
+f(x) = \displaystyle\sum_{i = 0} ^ {\infty} \frac{\Gamma \kern -0.08 em \left(\frac{2i + n_1 + n_2} {2} \right) \left(\frac{n_1} {n_2} \right)
+ ^ {(2i + n_1) / 2} x ^ {(2i + n_1 - 2) / 2} e ^ {-\delta / 2} \left(\frac{\delta} {2} \right) ^ {\kern -0.08 em i}} {\Gamma \left(\frac{n_2} {2} \right) \Gamma \left(\frac{2i + n_1} {2} \right) i! \left(1 + \frac{n_1} {n_2} x \right) ^ {(2i + n_1 + n_2) / 2}} \qquad \qquad x > 0
+$$
+for all $\delta > 0$ and positive integers $n_1$ and $n_2$.
+
+\vspace{0.1in}
+\noindent
+The cumulative distribution, survivor, hazard, 
+cumulative hazard, inverse distribution, moment generating, and characteristic functions on the support 
+of $X$ are mathematically intractable.
+
+\vspace{0.1in}
+\noindent
+The population mean and variance of $X$ are 
+$$
+E[X] = \frac{n_2 (n_1 + \delta)} {n_1(n_2 - 2)} \qquad \qquad n_2 > 2  
+$$
+$$
+V[X] = 2 \frac{(n_1 + \delta) ^ 2 + (n_1 + 2\delta) (n_2 - 2)}{(n_2 - 2) ^ 2(n_2 - 4)}
+\left(\frac{n_2} {n_1} \right) ^ {\kern -0.08 em 2}\qquad \qquad  n_2 > 4. 
+$$
+
+\vspace{0.1in}
+
+%\noindent
+%{\bf APPL failure:}
+%The APPL statements
+%\begin{verbatim}
+%assume(delta > 0);
+%assume(n1, posint); 
+%assume(n2, posint); 
+%X := [[x -> sum(GAMMA((2*i+n1+n2)/2)*(n1/n2)^((2*i+n1)/2)*
+%      x^((2*i + n1 - 2)/2)*exp(-delta/2)*(delta/2)^i/
+%      (GAMMA(n2/2)*GAMMA(i+n1/2)*factorial(i)*
+%      (1+n1*x/n2)^((2*i+n1+n2)/2)), i=0..infinity)],[0, infinity], 
+%      ["Continuous", "PDF"]];
+%Mean(X);
+%Variance(X);
+%CDF(X);
+%SF(X);
+%HF(X);
+%CHF(X);
+%IDF(X);
+%\end{verbatim}
+%fail to yield the cumulative distribution, survivor, hazard, cumulative hazard, and inverse distribution functions.
+
+\end{document}
