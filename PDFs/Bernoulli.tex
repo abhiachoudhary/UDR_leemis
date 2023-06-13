@@ -1,0 +1,134 @@
+%
+%  Chad Conrad
+%
+\documentclass[12pt,fullpage]{article}
+\usepackage{fullpage}
+\usepackage{amsmath}
+\usepackage{psfrag}                                          % LaTeX graphics tool
+\usepackage{pslatex}                                         % avoids the default cmr font
+\usepackage{graphicx}                                        % graphics package 
+\usepackage{epsfig}  
+\usepackage{hyperref}
+\usepackage{color}
+
+\begin{document}
+
+\noindent
+{\bf Bernoulli distribution} (from \color{blue}\url{http://www.math.wm.edu/~leemis/chart/UDR/UDR.html}\color{black})
+
+\noindent
+The shorthand $X \sim {\rm Bernoulli}(p)$ is used to indicate that the
+random variable~$X$ has the Bernoulli distribution with parameter~$p$,
+where $0 < p < 1$.
+A Bernoulli random variable~$X$ with success probability $p$ has
+probability mass function 
+$$
+f(x) = p ^ {x} (1 - p) ^ {1 - x} \qquad \qquad x = 0, 1
+$$
+for $0 < p < 1$.
+The Bernoulli distribution is associated with the notion of a {\it Bernoulli trial},
+which is an experiment with two outcomes, generically referred to as {\it success\/} ($x = 1$)
+and {\it failure} ($x = 0$).
+The cumulative distribution function of $X \sim {\rm Bernoulli}(p)$ is
+$$
+F(x) = P(X \le x) = 
+       \left\{
+       \begin{array}{lll}
+         0 & \qquad x < 0 \\
+         1 - p & \qquad 0 \leq x < 1 \\
+         1 & \qquad x \geq 1.
+       \end{array}
+       \right.
+$$
+The survivor function of~$X$ is
+$$
+S(x) = P(X \ge x) =
+       \left\{
+       \begin{array}{lll}
+         1 & \qquad x \le 0 \\
+         p & \qquad 0 < x \le 1 \\
+         0 & \qquad x > 1.
+     \end{array}
+     \right.
+$$
+The hazard function of~$X$ on the support is 
+$$
+h(x) = \frac{f(x)}{S(x)} =
+       \left\{
+       \begin{array}{lll}
+         1 - p & \qquad x = 0 \\
+         1 & \qquad x = 1.
+       \end{array}
+       \right.
+$$
+The cumulative hazard function of~$X$ on $x \le 1$ is 
+$$
+H(x) = -\ln S(x) =
+       \left\{
+       \begin{array}{lll}
+         0 & \qquad x \le 0 \\
+         -\ln p & \qquad 0 < x \le 1.
+       \end{array}
+       \right.
+$$
+The inverse distribution function of~$X$ is
+$$
+F ^ {-1}(u) = 
+              \left\{
+              \begin{array}{lll}
+                0 & \qquad 0 < u < 1 - p \\ 
+                1 & \qquad 1 - p \le u < 1.
+              \end{array}
+              \right.
+$$
+The median of~$X$ is~0 if $0 < p \le 1/2$ and~1 if $1/2 < p < 1$.
+The mode of~$X$, denoted by~$m$, is
+$$
+m = 
+    \left\{
+    \begin{array}{lll}
+      0 & \qquad 0 < p < 1/2 \\ 
+      1 & \qquad 1/2 < p < 1. 
+    \end{array}
+    \right.
+$$
+\noindent
+The moment generating function of~$X$ is
+$$
+M(t) = E\left[ e ^ {tX} \right] = (1 - p) + p e ^ {t} \qquad \qquad -\infty < t < \infty.
+$$
+The characteristic function of~$X$ is
+$$
+\phi(t) = E\left[ e ^ {itX} \right] = (1 - p) + p e ^ {it} \qquad \qquad -\infty < t < \infty. 
+$$
+The population mean, variance, skewness, and kurtosis of~$X$ are
+$$
+E[X] = p \qquad \qquad V[X] = p (1 - p)
+$$
+$$
+E\left[ \left( \frac{X - \mu}{\sigma} \right) ^{\kern -0.08 em 3}  \right] = \frac{1 - 2p}{\sqrt{p (1 - p)}} \qquad \qquad 
+E\left[ \left( \frac{X - \mu}{\sigma} \right) ^{\kern -0.08 em 4} \right] = \frac{3p ^ 2 - 3p + 1}{p (1 - p)}.
+$$
+
+%  \vspace{0.1in}
+
+\newpage
+
+\noindent
+{\bf APPL verification:}
+The APPL statements
+\begin{verbatim}
+X := BernoulliRV(p);
+CDF(X);
+SF(X);
+HF(X);
+CHF(X);
+IDF(X);
+Mean(X);
+Variance(X);
+Skewness(X);
+Kurtosis(X);
+MGF(X);
+\end{verbatim}
+verify the cumulative distribution function, survivor function, hazard function, cumulative hazard function, inverse distribution function, population mean, variance, skewness, kurtosis, and moment generating function.
+\end{document}
